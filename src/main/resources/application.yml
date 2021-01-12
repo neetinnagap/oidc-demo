@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaque:
+          introspection-uri: http://localhost:8080/auth/realms/Demo/protocol/openid-connect/token/introspect
+          introspection-client-id: democlient
+          introspection-client-secret: ae5ffadf-738d-48d9-b517-5a0f4606a5a6
